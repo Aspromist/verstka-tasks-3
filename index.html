@@ -5,14 +5,248 @@
         <title>Лет ми спик фром май харт</title>
         <link rel="stylesheet" href="index.css">
     </head>
+    
     <body>
-        <!-- Поле для фильтрации по городу -->
         <input
+            id="fromSearch"
             type="text"
             placeholder="Город отправления"
             value=""
             onkeyup="this.setAttribute('value', this.value)">
 
-        <!-- Здесь применять вашу самую сильную магию -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Тип рейса</th>
+                    <th>Номер рейса</th>
+                    <th>Авиакомпания</th>
+                    <th>Логотип авиакомпании</th>
+                    <th>Тип воздушного судна</th>
+                    <th>Аэропорт назначения</th>
+                    <th>Время</th>
+                    <th>Терминал</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >Отправление</td>
+                    <td>SU 0100 Москва - Нью-Йорк</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus А330-300</td>
+                    <td>Кеннеди</td>
+                    <td>12:40</td>
+                    <td>B</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 1836 Москва - Одесса</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Sukhoi Super Jet</td>
+                    <td>ODS</td>
+                    <td>12:20</td>
+                    <td>A</td>
+                    <td>Ожидание посадки</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 4452 Москва - Париж</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A319</td>
+                    <td>CDG</td>
+                    <td>12:00</td>
+                    <td>E</td>
+                    <td>Посадка закончена</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 2010 Москва - Прага</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A321-100/200</td>
+                    <td>Рузыне</td>
+                    <td>11:45</td>
+                    <td>A</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 3204 Москва - Рим</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A321-100/200</td>
+                    <td>Фьюмичино</td>
+                    <td>12:25</td>
+                    <td>D</td>
+                    <td>Посадка закончена</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 1602 Москва - Самара</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A320-100/200</td>
+                    <td>Самара</td>
+                    <td>13:30</td>
+                    <td>D</td>
+                    <td>Регистрация</td>
+                </tr>
+                <tr>
+                    <td>Отправление</td>
+                    <td>SU 0036 Москва - Санкт-Петербург</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A320-100/200</td>
+                    <td>Пулково</td>
+                    <td>11:30</td>
+                    <td>B</td>
+                    <td>Вылетел</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 0525 Дубай - Москва</td>
+                    <td>Flydubai</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Fly_Dubai_logo_2010_03.svg/2000px-Fly_Dubai_logo_2010_03.svg.png"
+                            alt="Логотип компании 'Flydubai'" height="30">
+                    </td>
+                    <td>Boeing 737-800 (winglets)</td>
+                    <td>Шереметьево</td>
+                    <td>14:00</td>
+                    <td>C</td>
+                    <td>По расписанию</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 2501 Мадрид - Москва</td>
+                    <td>S7 Airlines</td>
+                    <td>
+                        <img src="https://lh6.googleusercontent.com/-GLXM29dE9y4/AAAAAAAAAAI/AAAAAAAAAAA/YEkDpbfFVhU/s0-c-k-no-ns/photo.jpg"
+                            alt="Логотип компании 'S7 Airlines'" height="30">
+                    </td>
+                    <td>Airbus A321-100/200</td>
+                    <td>Шереметьево</td>
+                    <td>17:40</td>
+                    <td>E</td>
+                    <td>Летит</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 2600 Майами - Москва</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus A319</td>
+                    <td>Шереметьево</td>
+                    <td>20:50</td>
+                    <td>E</td>
+                    <td>Задерживается до 21:30</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 2685 Берлин - Москва</td>
+                    <td>Air Berlin</td>
+                    <td>
+                        <img src="http://i0.wp.com/stuffled.com/wp-content/uploads/2014/05/Air-Berlin-Logo-Vector-Image.png?resize=1020%2C680"
+                            alt="Логотип компании 'Air Berlin'" height="50">
+                    </td>
+                    <td>Airbus A320-100/200</td>
+                    <td>Шереметьево</td>
+                    <td>11:40</td>
+                    <td>D</td>
+                    <td>Приземлился</td>
+                </tr>
+                <tr >
+                    <td>Прибытие</td>
+                    <td>SU 2017 Прага - Москва</td>
+                    <td>Central Connect Airlines</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Central_Connect_Airlines_logo.svg/200px-Central_Connect_Airlines_logo.svg.png"
+                            alt="Логотип компании 'Central Connect Airlines'" height="30">
+                    </td>
+                    <td>Airbus A320-100/200</td>
+                    <td>Шереметьево</td>
+                    <td>11:30</td>
+                    <td>A</td>
+                    <td>Приземлился</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 5305 Ростов на Дону - Москва</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Airbus А319</td>
+                    <td>Шереметьево</td>
+                    <td>15:00</td>
+                    <td>D</td>
+                    <td>Летит</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 1425 Челябинск - Москва</td>
+                    <td>Ural Airlines</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Ural_Airlines_logo.png"
+                            alt="Логотип компании 'Ural Airlines'" height="30">
+                    </td>
+                    <td>Airbus A320-100/200</td>
+                    <td>Шереметьево</td>
+                    <td>15:35</td>
+                    <td>E</td>
+                    <td>Летит</td>
+                </tr>
+                <tr>
+                    <td>Прибытие</td>
+                    <td>SU 1701 Владивосток - Москва</td>
+                    <td>Аэрофлот</td>
+                    <td>
+                        <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/a1/Aeroflot_logo.svg/2500px-Aeroflot_logo.svg.png"
+                            alt="Логотип компании 'Аэрофлот'" height="30">
+                    </td>
+                    <td>Boeing 777-300ER</td>
+                    <td>Шереметьево</td>
+                    <td>17:40</td>
+                    <td>B</td>
+                    <td>Задерживается до 22:00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        Отправить данные о рейсе на телефон:
+        <form id="sendToMobile" name="sendToMobile">
+            <label for="tel">Телефон: <input id="tel" type="tel" required></label>
+            <label for="email">Email: <input id="email" type="email" required></label>
+            <input type="submit" value="Отправить данные">
+        </form>
     </body>
 </html>
